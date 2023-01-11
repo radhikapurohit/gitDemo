@@ -1,0 +1,6 @@
+this is my first version of project
+
+git status
+git init
+git add -a
+git add --a
