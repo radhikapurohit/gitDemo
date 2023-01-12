@@ -32,7 +32,14 @@ unme se kuch m hmne changes kiye to wo files modified m gyi
 fr hmne git add krke staging area m send kiya to sb stage hogyi pr modified m wo files rhengi jinme changes kiye the 
 
 sbse pehle jb humne git add --a kiya to untracked se track hongi mtlb unmodified pr jaengi, fr changes krke jb hum add krenge tb wo stage hongi
-
 stage k baad files commit hongi
 
 CHANGE
+
+touch error .log                 creates an error.log file
+
+log ko hme hmesha ignore krna h
+
+we use touch to create new files
+touch .gitignore
+now write error.log in your gitignore file        iska mtln hmne error file ko gitignore m daal diya
