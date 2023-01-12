@@ -4,3 +4,35 @@ git status
 git init
 git add -a
 git add --a
+khali git commit likha to ek window khul jaegi
+thats why we use git commit -m "Initial Commit"     mtlb hum commit krke ek msg dena chahte h
+
+git log     to check humne kya kya commit kiye h
+git add filename.extension       to commit a particular file
+
+rm -rf .git    deletes the whole git repository, sb ud jaega   its a linux based command
+
+git clone https://github.com/tensorflow/tensorflow.git tensorflow     shifts all the data into a repository named tensorflow
+
+pwd            present working directory
+ls                lists all the contents in the folder
+cd               change directory
+
+Repository: A folder which is being tracked by the user, which contains n number of files and n number of folders
+
+.git is a hidden folder in a repository which contains all the details of version control .....
+jaise jaise hum cmd likhenge, wse wse ye files ugalta jata h... mtlb jaise hum code likhenge ki is date ko hmare commit pr leke jao, wo us din ka pura detail nikal k de dega 
+
+4 stages:
+untracked, unmodified, modified, staged
+
+jb git init kiya to all files and folders are untracked
+git add --a k baad sb unmodified m chli gyi
+unme se kuch m hmne changes kiye to wo files modified m gyi
+fr hmne git add krke staging area m send kiya to sb stage hogyi pr modified m wo files rhengi jinme changes kiye the 
+
+sbse pehle jb humne git add --a kiya to untracked se track hongi mtlb unmodified pr jaengi, fr changes krke jb hum add krenge tb wo stage hongi
+
+stage k baad files commit hongi
+
+CHANGE
