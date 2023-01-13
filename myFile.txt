@@ -43,3 +43,54 @@ log ko hme hmesha ignore krna h
 we use touch to create new files
 touch .gitignore
 now write error.log in your gitignore file        iska mtln hmne error file ko gitignore m daal diya
+
+or we can write *.log  inside your gitignore folder, taaki jitni bhi log files ho wo ek baar m usme dal jaye
+
+agr koi ek untracked directory h jisko hum track nhi krna chahte to gitignore m likhdo        dir/         to ye dir k andr k content ko ignore krega
+/dir/ mtlb sirf bahar wali dir ko ignore kro
+
+git add -A command will add all modified and untracked files in the entire repository. Whereas git add . will only add modified and untracked files in the current directory and any sub-directories.
+
+git diff will compare working area with the staging directory        mtlb          koi file h jo staging area m rkhi h stage hone k liye   ab usko hmne frse modify kr diya     to wo file staged m bhi dikhegi or modified  m bhi       ab agr hum add krenge to wo merge ho jaegi       leking agr hum git diff use krenge to wo in dono files m diff btaegi   mtlb compare kregi
+
+git diff --staged            compoares pichla commit to present staging area
+
+git by default blank folders ko ignore krta h
+
+git add -a -m "Direct commit"              files ko directly commit kr deta h skipping the staging area
+pr jo untracked files h wo nhi jaengi commit m
+
+if we rename a file in our repository, or check kre status to wo bta dega ki aapne ek file delete ki h or ek untracked file h, jo hmne rename hi ki h bs
+fr jb hum usko stage krenge, tb comp ko smjh aaega ki hmne new file add nhi blki purani ko rename ki h        ye to h old method
+
+
+git rm third.txt                removes third.txt file
+
+git mv myFile.txt newName.txt              to rename and stage the file
+
+agr koi file hmne gitignore m daaldi fr stage hogya or commit bhi,         fr hmne us file m kuch chng kiya, to wo track nhi honi chahiye thi kyuki wo gitignore m h, pr wo track ho rhi h         so to make it untrackable we use         git rm --cached filename
+ab agr hm isme changes krenge to track nhi hoga
+
+git log -p                  to check ki ab tk kya kya hataya h, kya commit kiya h, sb kuch        mtlb saare changes             konsi line add hui h, konsi remove, sb     alongwith their diff
+git log -p -2              last 2 commits dikhaega and baaki same as above
+
+q                               to quit
+git log --stat             short m btata h ki kya kya hua h isme        like author, date, kis file m kya chng h, kb commit h, kya remove kiya h                  mtlb saare commits ki summary
+
+git log --pretty=oneline          shows all commits in one line
+git log --pretty=short
+git log --pretty=full
+git log --since=2.days   2.weeks    2.months    2.years
+git log --pretty=format:"%h -- %an"          %h is abbreviated commit and an is author name          mtlb is format m print krwaye h commit           ae is for author email
+ye sb github ki documentation site pr available h
+
+git restore --staged myFile.txt               to unstage
+
+git checkout -- myFile.txt               to undo the changes made in a file
+
+git checkout -f                      working directory ko pichle commit jaisa bna deti h
+
+remote repository                   jo kisi server pr rkhi h
+A remote URL is Git's fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub, or another user's fork, or even on a completely different server.
+
+remote is a website/repository over the internet
